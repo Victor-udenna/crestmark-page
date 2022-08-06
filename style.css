@@ -120,6 +120,12 @@ text-align: center;
     align-items: center;
 }
 
+.brand-sub-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .brand-logo{
     padding: 0 1.4rem 1.4rem 1.4rem;
 }
@@ -169,6 +175,16 @@ text-align: center;
 .our_services {
     text-align: center;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.our_services p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .our_services h3{
@@ -188,7 +204,7 @@ align-items: center;
 }
 
 .our_services .cards{
-    background-color: var(--button-color);
+    background-color: var(--background_color);
     color: var(--light-text);
     width: 150px;
     height: 130px;
@@ -201,12 +217,36 @@ align-items: center;
     font-weight: 600;
     padding: 5px;
     border-radius: 10px 0px;
+    transition: .5s;
+}
+
+.our_services .cards:hover{
+    background-color: var(--button-color);
+    width: 150px;
+    height: 140px;
+    z-index: 1;
 }
 
 .card-sub-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+      }
+
+      .see-more{
+        padding-top: 30px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .see-more a{
+        color: var(--background_color);
+        text-decoration: none;
+      }
+
+      .see-more a:hover{
+        color: #004973; 
+        text-decoration: underline;
       }
 
 
@@ -241,10 +281,9 @@ align-items: center;
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 }
 /*  */
-
-
 @media screen and (min-width: 768px) {
     
     nav ul li{
@@ -310,8 +349,8 @@ align-items: center;
 
     .section{
         display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items: center;
         margin-top: 2.3rem;
         background-color: #f3fbff;
     }
