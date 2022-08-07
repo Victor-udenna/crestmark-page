@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #c0f6ff;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        main *{
+            padding-bottom: .4rem;
+        }
+
+        .message{
+            background-color: white;
+            padding: .7rem;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 24px;
+            color: rgb(3, 3, 91);
+        }
+
+        p{
+            color: rgb(3, 3, 91);
+            font-size: 18px;
+        }
+
+        button{
+            padding: 1rem;
+            background-color: #79ebff;
+            border: none;
+            font-size: 18px;
+            border-radius: 10px;
+            width: 100px;
+        }
+
+        @media screen and (min-width: 768px) {
+            h1{
+            font-size: 28px;
+            }
+
+            main *{
+            padding-bottom: .6rem;
+        }
+        }
+
+        @media screen and (min-width: 1024px) {
+            h1{
+            font-size: 32px;
+            }
+
+            main *{
+            padding-bottom: .9rem;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="message">
+        <div class="btn-text">
+            <h1>Your details has been <span>recieved</span></h1>
+            <p>We will get back to you shortly.
+                click the button to return back to page
+            </p>
+        </div>
+            <div><img src="./images/check-circle-fill.svg" alt=""></div>
+        <div class="btn-container"><a href="./contact.css"><button class="success">Got it</button></a></div>
+        </div>
+    </main>
+</body>
+</html>
