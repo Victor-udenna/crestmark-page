@@ -205,7 +205,6 @@ iframe{
 }
 /*  */
 
-
 @media screen and (min-width: 768px){
 
     nav ul li{
@@ -289,6 +288,8 @@ iframe{
 .form-container{
     text-align: start;
 }
+
+
 
 .footer{
     display: flex;
