@@ -283,6 +283,11 @@ align-items: center;
     align-items: center;
     cursor: pointer;
 }
+
+.footer-logo{
+    width: 130px;
+  }
+
 /*  */
 @media screen and (min-width: 768px) {
     
@@ -313,12 +318,16 @@ align-items: center;
             width: 150px;
         }
 
+        .footer-logo{
+            width: 150px;
+          }
+
         
 
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
     
     .header{
         display: flex;
@@ -416,7 +425,7 @@ align-items: center;
       }
 
       .footer-logo{
-        width: 200px;
+        width: 180px;
       }
 
       .footer .footer-item-icon{

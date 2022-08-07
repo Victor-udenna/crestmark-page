@@ -11,7 +11,7 @@ body{
     margin: 0;
     padding: 0;
     font-size: 16px;
-    overflow-x: hidden;
+    width: 100%;
     
 }
 /* nav style */
@@ -111,6 +111,7 @@ nav ul li a{
 .input-items:focus{
     outline: 2px solid var(--button-color);
     border: 2px solid var(--button-colorcolor);
+    border-radius: 7px;
     border: none;
 }
 
@@ -146,7 +147,63 @@ label{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 1.7rem 1rem;
+    background-color: #f3fbff;
 }
+
+
+/* Footer  */
+.footer{
+    background-color: var(--background_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .footer-list {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+.footer .footer-item {
+    color: var(--light-text);
+    text-align: none;
+    padding: 1rem; 
+}
+
+.footer .footer-icon{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.footer-logo{
+    width: 130px;
+  }
+
+/* MAP */
+iframe{
+    width: 100%;
+    margin: auto;
+}
+
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:700px;
+    width: 100;
+}
+/*  */
 
 
 @media screen and (min-width: 768px){
@@ -184,9 +241,26 @@ label{
             width: 200px;
         }
 
+        .footer-logo{
+            width: 150px;
+          }
+
+        iframe{
+            width: 700px;
+        }
+
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:700px;
+            width:100%;
+        }
+
+    
+
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
   .main-content{
     display: flex;
     flex-direction: row;
@@ -205,7 +279,7 @@ label{
 }
 
 .name .input-items{
-    width: 160px;
+    width: 140px;
 }
 
 .input-items.message{
@@ -214,6 +288,34 @@ label{
 
 .form-container{
     text-align: start;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px 10px 10px;
+  }
+
+  .footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo{
+    width: 180px;
+  }
+
+  .footer .footer-item-icon{
+    padding-right: 3.4rem;
+  }
+
+  .primary-btn{
+    height: 48px;
+    width: 170px;
 }
    
 }
