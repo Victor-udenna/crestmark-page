@@ -77,8 +77,13 @@ nav ul li a{
 
 
 .form-container{
-    text-align: center;
+    /* text-align: center; */
+    /* /* margin: auto; */
     padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .form-header{
@@ -115,11 +120,12 @@ nav ul li a{
     border: none;
 }
 
-label{
+.input-container label{
     padding-bottom: 5px;
     font-weight: 500;
     color: var(--dark_text);
     cursor: pointer;
+    text-align: start !important;
 }
 
 .input-container{
