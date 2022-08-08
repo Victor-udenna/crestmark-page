@@ -1,0 +1,260 @@
+:root{
+    --background_color : #010133;
+    --white-text: #fff;
+    --light-text: #FBFCFE;
+    --dark_text: #010133;
+    --button-color: #53b7f5;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+.nav{
+    font-weight: 700;
+    color: var(--dark_text);
+    padding: .7rem 1.2rem;
+    
+}
+
+.logo{
+    width: 120px;
+}
+
+.primary-btn{
+height: 40px;
+width: 100px;
+background-color: #53b7f5;
+color: #FBFCFE;
+border: none;
+display: block;
+border-radius: 24px;
+font-weight: 700;
+cursor: pointer;    
+margin: auto;
+}
+
+
+.nav a{
+    text-decoration: none;
+}
+
+
+
+nav ul li{
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: var(--dark_text);
+}
+
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.toggle-button{
+    background-color: transparent;
+    border: none;
+}
+
+.video_header{
+background-color: #085cdc;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    color: var(--dark_text);
+}
+
+.main-text_items{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+
+span{
+    color: var(--button-color);
+}
+
+.the_team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+ 
+}
+
+.team_members{
+    text-align: center;
+    font-weight: 600;
+    color: var(--button-color); 
+    
+}
+
+.team_members h5{
+  padding: 1rem 1rem 0px 1rem;
+  color: var(--background_color);
+ 
+}
+
+.footer{
+    background-color: var(--background_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .footer-list {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+
+.footer .footer-item {
+    color: var(--light-text);
+    text-align: none;
+    padding: 1rem; 
+}
+
+.footer .footer-icon{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-logo{
+    width: 130px;
+  }
+
+@media screen and (min-width: 768px) {
+    nav ul li{
+        padding-left: 1rem;
+        padding-right: 2rem;
+         }
+
+         .toggle-button{
+          display: none;
+        }
+
+        .nav{
+            font-weight: 700;
+            color: var(--dark_text);
+            padding: 1.5rem 3rem;
+        }
+
+        .main-text_items{
+            padding-top: 1.3rem;
+            padding-bottom: 1.8rem;
+        }
+    
+
+        .member_img{
+            width: 150px;
+        }
+
+        .logo{
+            width: 150px;
+        }
+
+        .footer-logo{
+            width: 150px;
+          }
+}
+
+@media screen and (min-width: 1124px) {
+    .primary-btn{
+        height: 48px;
+        width: 170px;
+    }
+
+    .logo{
+        width: 180px;
+    }
+
+    .video_header{
+    height: 700px;
+    width: 100%;
+    }
+
+    .main-text_items{
+        text-align: start;
+        padding-top: 3rem;
+        padding-bottom: 2.2rem;
+    }
+
+    .main-text p{
+        width: 60%;
+    }
+    
+    .main-text_items{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .the_team{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1.5rem;
+     
+    }
+    
+
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10px 10px 10px;
+      }
+
+      .footer-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-logo{
+        width: 180px;
+      }
+
+      .footer .footer-item-icon{
+        padding-right: 3.4rem;
+      }
+}
