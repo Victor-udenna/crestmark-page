@@ -122,6 +122,14 @@ span{
  
 }
 
+.meetthe_team-container{
+    text-align: center;
+}
+
+.meetthe_team-container h1{
+    padding: 2rem;
+}
+
 .footer{
     background-color: var(--background_color);
     display: flex;
