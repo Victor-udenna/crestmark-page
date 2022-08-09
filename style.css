@@ -395,6 +395,8 @@ padding: 2rem;
         justify-content: space-between;
         align-items: center;
         text-align: right;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
     .header_text{
         text-align: start;
@@ -406,7 +408,7 @@ padding: 2rem;
 
 
 
-    
+
 
 .header-img{
   width: 500px;
