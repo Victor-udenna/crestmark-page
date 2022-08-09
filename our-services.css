@@ -79,7 +79,8 @@ nav ul li a{
   padding: 2rem 0;
   text-align: center;
   color: var(--light-text)
-} 
+}
+
 
 .service-container{
     padding-bottom: 1.5rem;
@@ -107,6 +108,10 @@ margin: 1rem auto;
     width: 100%;
 }
 
+.copy-right{
+    text-align: center;
+}
+
 .service-text--heading{
  margin: 1rem auto 0.5rem auto;
 }
@@ -116,6 +121,7 @@ margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* text-align: center; */
 }
 
 .footer .footer-list {
@@ -220,19 +226,25 @@ margin: 1rem auto;
 font-size: 1.2rem;
 }
 
+.primary-btn {
+    height: 48px;
+    width: 170px;
+  }
   
   .service-container_text{
     font-size: 23px;
 }
 
-   
+
+
   .service{
   display: flex;
   justify-content: space-between;
   }
 
   .service-container{
-    width: 90%;
+    width: 100%;
+    line-height: 2.3rem;
     margin: 0 auto;
   }
 
@@ -259,7 +271,7 @@ font-size: 1.2rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10px 10px 10px;
+    padding: 2rem 2.7rem 1rem 2.7rem;
   }
 
   .footer-list{

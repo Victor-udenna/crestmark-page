@@ -84,10 +84,14 @@ background-color: #085cdc;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem 1.2rem;
     text-align: center;
     line-height: 2rem;
     color: var(--dark_text);
+}
+
+.main-text h2{
+    font-weight: 600;
 }
 
 .main-text_items{
@@ -112,23 +116,31 @@ span{
 .team_members{
     text-align: center;
     font-weight: 600;
-    color: var(--button-color); 
+    color: var(--button-color);
+    padding-bottom: 2.2rem; 
     
 }
 
 .team_members h5{
   padding: 1rem 1rem 0px 1rem;
   color: var(--background_color);
+  font-weight: 600;
  
 }
 
 .meetthe_team-container{
     text-align: center;
+    
 }
 
 .meetthe_team-container h1{
     padding: 2rem;
     color: var(--dark_text);
+    font-weight: 700;
+}
+
+.member_img{
+    width: 150px;
 }
 
 .footer{
@@ -184,6 +196,10 @@ span{
             padding: 1.5rem 3rem;
         }
 
+        .main-text h2{
+            font-weight: 700;
+        }
+
         .main-text_items{
             padding-top: 1.3rem;
             padding-bottom: 1.8rem;
@@ -191,7 +207,7 @@ span{
     
 
         .member_img{
-            width: 150px;
+            width: 180px;
         }
 
         .logo{
@@ -222,6 +238,11 @@ span{
     width: 100%;
     }
 
+  .main-text{
+    padding: 1.5rem 3rem;
+  }
+
+
     .main-text_items{
         text-align: start;
         padding-top: 3rem;
@@ -243,10 +264,13 @@ span{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        padding: 1.5rem;
+        padding: 3rem;
      
     }
     
+    .member_img{
+        width: 220px;
+    }
 
 
     .footer{
@@ -254,7 +278,7 @@ span{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 10px 10px 10px;
+        padding: 2rem 2.7rem 1rem 2.7rem;
       }
 
       .footer-list{

@@ -13,7 +13,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="./images/Asset 2.svg" alt="" width="120px" class="logo"></a>
           <button class="toggle-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <img src="./images/menu.svg" alt="">
+            <img src="./images/menu.svg" alt="" class="hamburgerbtn">
           </button>
           <div class="collapse navbar-collapse" id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -36,10 +36,16 @@
       </nav>
   <header class="header">
     <div class="header_text">
-        <h1>Welcome to Crestmark limited where we build and maintain your softwares.</h1>
+        <h1>Welcome to Crestmark Technologies limited where we build and maintain softwares.</h1>
     </div>
-    <div>
-        <img src="./images/header-img.png" alt="" width="300" class="header-img">
+    <div class="header-img-container">
+     <picture>
+        <source media="(min-width:1124px)" srcset="./images/header-img.png">
+        <source media="(min-width:768px)" srcset="./images/tablet-design.png" class="tablet">
+        <img src="./images/iphone.png" width="300px">
+      </picture>
+
+        <!-- <img src="./images/header-img.png" alt="" width="300" class="header-img"> -->
     </div>
   </header>
       <main>
@@ -103,10 +109,8 @@
              </button>
            </div>
           </section>
-        
-        
          <section class="info">
-        <h3 class="heading">
+        <h3 class="heading mb-">
         Lorem, ipsum dolor ?
         </h3>
         
@@ -177,7 +181,7 @@ Today, millions of people around the world have successfully connected their acc
 
 <footer class="footer">
 <ul class="footer-list ps-0">
-  <li class="footer-item"><img src="./images/Asset 4.png" alt="" class="footer-logo"></li>
+  <a href="index.html"><li class="footer-item"><img src="./images/Asset 4.png" alt="" class="footer-logo"></li></a>
   <li class="footer-item"><a href="our-services.html">our services</a></li>
   <li class="footer-item"><a href="about.html">About</a></li>
   <li class="footer-item"><a href="contact.html">Contact</a></li>

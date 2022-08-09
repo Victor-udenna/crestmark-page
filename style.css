@@ -85,14 +85,25 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: .7rem 1.2rem;
+    padding: .7rem 2rem;
     color: var(--dark_text);
+    /* background-color:  #f3fbff; */
     background: url(./images/wallpaper\ for\ destop.jpg) no-repeat 100% 100%/ cover;
 
 }
 
+picture {
+   width: 300px;
+   margin: auto;
+}
+
 .header-img{
-    width: 400px;
+    width: 100%;
+}
+
+.header h1{
+    line-height: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 /*  */
@@ -100,8 +111,9 @@ nav ul li a{
 /* First section */
 
 .section{
-    padding: .7rem 1.5rem;
+    padding: 2rem 1.5rem;
     color: var(--background_color);
+    background-color: #f3fbff;
 }
 
 .section_text{
@@ -112,6 +124,8 @@ text-align: center;
     padding: 1rem 1.4rem 1.4rem 1.4rem;
     font-weight: 700;
 }
+
+
 
 .section_brands{
     text-align: center;
@@ -155,20 +169,27 @@ text-align: center;
 
 .article{
     text-align: center;
+    /* padding-top: 1rem; */
+    padding-bottom: 2rem;
 }
 
 .article h2{
     color: var(--light-text);
-    padding-bottom: 20px;
-    padding-top: 30px;
+    padding: 30px 0;
     font-weight: 700;
 }
 
 .article .info{
-    padding: 1rem 2rem;
+    padding: 2rem;
+    
+}
+
+.article .info p {
+    text-align: justify;    
 }
 
  .span{
+    font-size: 1.7rem;
     color: var(--button-color);
 }
 /*  */
@@ -183,19 +204,23 @@ text-align: center;
 .our_services p{
     font-size: 1.3rem;
     font-weight: 400;
-    padding-top: 20px;
+    padding-top: 0.5rem;
     padding-bottom: 20px;
 }
 
 .our_services h3{
 font-weight: 700;
 color: var(--background_color);
+padding: .4rem 0px 0rem 0px;
+font-size: 1.7rem;
 }
 
 .our_services .card-container{
 display: flex;
 flex-direction: column;
 align-items: center;
+justify-content: space-between;
+padding: 2rem;
 /* background-color: var(--background_color); */
 }
 
@@ -206,8 +231,8 @@ align-items: center;
 .our_services .cards{
     background-color: var(--background_color);
     color: var(--light-text);
-    width: 150px;
-    height: 130px;
+    width: 160px;
+    height: 140px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -216,7 +241,7 @@ align-items: center;
     font-size: 12px;
     font-weight: 600;
     padding: 5px;
-    border-radius: 10px 0px;
+    border-radius: 10px 1px;
     transition: .5s;
 }
 
@@ -237,6 +262,7 @@ align-items: center;
         padding-top: 30px;
         font-size: 20px;
         font-weight: 600;
+        transition: .5s;
       }
 
       .see-more a{
@@ -245,8 +271,9 @@ align-items: center;
       }
 
       .see-more a:hover{
-        color: #004973; 
-        text-decoration: underline;
+
+        color: var(--button-color);
+
       }
 
 
@@ -279,7 +306,7 @@ align-items: center;
 .footer .footer-icon{
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -312,8 +339,39 @@ align-items: center;
             padding: 2rem 3.2rem;
         }
 
-        header-img{
+        .header_text h1{
+            line-height: 4rem;
+        }
+
+        .header-img{
             width: 450px;
+        }
+
+        .article{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .section{
+            padding: 3rem 3.4rem;
+        }
+
+        .section p{
+            line-height: 2.3rem;
+        }
+
+        .our_services .cards{
+            width: 200px;
+            height: 200px;
+        }
+        .our_services .cards:hover{
+            width: 210px;
+            height: 210px;
+            
+        }
+
+        .our_services p{
+            line-height: 2.3rem;
         }
 
         .logo{
@@ -343,10 +401,15 @@ align-items: center;
         max-width: 700px;
         font-weight: 700;
         font-size: 48px;
+        
     }
 
+
+
+    
+
 .header-img{
-  width: 600px;
+  width: 500px;
     }
 
     .primary-btn{
@@ -360,10 +423,9 @@ align-items: center;
 
     .section{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         margin-top: 2.3rem;
-        background-color: #f3fbff;
     }
    
     .section_text{
@@ -391,20 +453,24 @@ align-items: center;
        .article-content{
         flex-direction: row;
         justify-content: space-between;
-        padding: 2rem;
+        padding: 2rem 4%;
        }
        
        .article-content .info{
         width: 40%;
         text-align: justify;
        }
+
+       .article{
+        /* padding-top: 3rem; */
+        padding-bottom: 3.5rem;
+    }
       
-         .section_brands{
+         /* .section_brands{
             padding-right: 5rem;
-        }
+        } */
 
         .section .section_text{
-            padding-left: 2rem;
             text-align: justify;
     
         }
@@ -414,14 +480,27 @@ align-items: center;
                 flex-direction: row;
                 justify-content: center;
             }
+
+            .our_services .cards{
+                width: 210px;
+                height: 210px;
+                
+            }
+
+            .our_services .cards:hover{
+                width: 220px;
+                height: 220px;
+                z-index: 1;
+                
+            }
         
-      .footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10px 10px 10px;
-      }
+            .footer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem 2.7rem 1rem 2.7rem;
+              }
 
       .footer-list{
         display: flex;
