@@ -180,6 +180,14 @@ span{
     width: 130px;
   }
 
+  .copy-rigt {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    color: var(--light-text);
+    font-size: 8px;
+    font-weight: 500;
+  }
+
 @media screen and (min-width: 768px) {
     nav ul li{
         padding-left: 1rem;
@@ -294,5 +302,11 @@ span{
 
       .footer .footer-item-icon{
         padding-right: 2.8rem;
+      }
+
+      .copy-rigt {
+        text-align: center;
+        padding: 10px 10px 0px 10px;
+        font-size: 13px;
       }
 }

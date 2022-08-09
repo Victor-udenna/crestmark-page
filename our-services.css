@@ -153,6 +153,14 @@ margin: 1rem auto;
     width: 130px;
   }
 
+  .copy-rigt {
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    color: var(--light-text);
+    font-size: 8px;
+    font-weight: 500;
+  }
+
 
 /*  */
 
@@ -209,7 +217,7 @@ margin: 1rem auto;
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
     
    .main-header{
     font-size: 4rem;
@@ -288,4 +296,10 @@ font-size: 1.2rem;
   .footer .footer-item-icon{
     padding-right: 2.8rem;
   }
+  .copy-rigt {
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    font-size: 13px;
+  }
+
 }
