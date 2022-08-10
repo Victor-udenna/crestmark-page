@@ -88,6 +88,7 @@ background-color: #085cdc;
     text-align: center;
     line-height: 2rem;
     color: var(--dark_text);
+    background-color: #f3fbff;
 }
 
 .main-text h2{
@@ -140,7 +141,7 @@ span{
 }
 
 .member_img{
-    width: 150px;
+    width: 200px;
 }
 
 .footer{
@@ -215,7 +216,7 @@ span{
     
 
         .member_img{
-            width: 180px;
+            width: 280px;
         }
 
         .logo{
@@ -277,7 +278,7 @@ span{
     }
     
     .member_img{
-        width: 220px;
+        width: 300px;
     }
 
 

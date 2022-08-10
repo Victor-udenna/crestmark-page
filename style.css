@@ -7,6 +7,7 @@
 
 }
 
+
 body{
     margin: 0;
     padding: 0;
@@ -37,6 +38,9 @@ border-radius: 24px;
 font-weight: 700;
 cursor: pointer;    
 margin: auto;
+}
+span{
+    color: var(--button-color);
 }
 
 
@@ -85,6 +89,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-weight: 700;
     padding: .7rem 2rem;
     color: var(--dark_text);
     /* background-color:  #f3fbff; */
@@ -92,14 +97,16 @@ nav ul li a{
 
 }
 
-picture {
-   width: 300px;
-   margin: auto;
-}
+.tab-img, .laptop-img{
+    display: none;
+} 
 
 .header-img{
-    width: 100%;
+    width: 300px;
+    margin-left: 10%;
 }
+
+
 
 .header h1{
     line-height: 2.5rem;
@@ -344,7 +351,16 @@ padding: 2rem;
         }
 
         .header{
-            padding: 2rem 3.2rem;
+            padding: 1.5rem 3rem;
+        }
+
+        .phone-img, .laptop-img{
+            display: none;
+        } 
+
+        .tab-img{
+            display: block;
+            margin-left: 0px;
         }
 
         .header_text h1{
@@ -358,6 +374,10 @@ padding: 2rem;
         .article{
             padding-top: 3rem;
             padding-bottom: 3rem;
+        }
+
+        .article .info{
+            padding: 1.5rem 3rem;
         }
 
         .section{
@@ -403,24 +423,43 @@ padding: 2rem;
         justify-content: space-between;
         align-items: center;
         text-align: right;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding: 10rem 0px 10rem 3rem;
     }
+
+    .phone-img, .tab-img{
+        display: none;
+    }
+
+    .laptop-img{
+        display: block;
+        margin-left: 0px;
+    }
+
     .header_text{
         text-align: start;
-        max-width: 700px;
-        font-weight: 700;
+        width: 700px;
         font-size: 48px;
         
     }
 
+    .article .info{
+        padding-right: 0px;
+    }
 
 
 
+    .header-img-container{
+        padding-left: 2rem;
+        align-self: flex-end;
+        padding: 0;
+        margin-right: -20px;
+    }
 
 .header-img{
-  width: 500px;
+  width: 450px;
     }
+
+
 
     .primary-btn{
         height: 48px;
@@ -493,6 +532,10 @@ padding: 2rem;
         .section .section_text{
             text-align: justify;
     
+        }
+
+        .our_services{
+            padding: 3rem;
         }
 
             .our_services .card-container{
