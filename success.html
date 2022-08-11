@@ -7,6 +7,14 @@
     <title>Document</title>
     <style>
 
+:root {
+  --background_color: #010133;
+  --white-text: #fff;
+  --light-text: #fbfcfe;
+  --dark_text: #010133;
+  --button-color: #53b7f5;
+}
+
         body{
             margin: 0;
             padding: 0;
@@ -18,7 +26,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #c0f6ff;
+            background-color: #d0f6fd;
             margin: 0;
             padding: 1rem;
         }
@@ -51,11 +59,20 @@
         button{
             padding: 1rem;
             background-color: #79ebff;
+
             border: none;
             font-size: 18px;
             border-radius: 10px;
             width: 100px;
-            font-weight: 600;
+            color: var(--dark_text);
+            font-weight: 700;
+            transition: .5s;
+        }
+
+
+        button:hover{
+            background-color: rgb(218, 252, 251);
+            color: #53b7f5;
         }
 
         @media screen and (min-width: 768px) {
