@@ -364,9 +364,20 @@ iframe {
     font-size: 1.2rem;
   }
 
-  .logo {
-    width: 200px;
-  }
+  .logo{
+    width: 230px;
+}
+
+  .contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact_text{
+  padding-left: 1.2rem;
+}
 
   .input-items {
     padding: 0.8rem;

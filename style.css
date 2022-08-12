@@ -147,8 +147,11 @@ text-align: center;
     align-items: center;
 }
 
+
+
 .brand-logo{
     padding: 0 1.4rem 1.4rem 1.4rem;
+
 }
 /*  */
 
@@ -163,6 +166,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+}
+
+.carousel-heading{
+    color: var(--button-color);
+    font-weight: 700;
 }
 
 .courosel-container{
@@ -381,11 +389,15 @@ padding: 2rem;
         }
 
         .section{
-            padding: 3rem 3.4rem;
+            padding: 3rem 4rem;
         }
 
         .section p{
             line-height: 2.3rem;
+        }
+
+        .brand-img{
+            width: 350px;
         }
 
         .our_services .cards{
@@ -423,7 +435,7 @@ padding: 2rem;
         justify-content: space-between;
         align-items: center;
         text-align: right;
-        padding: 10rem 0px 10rem 3rem;
+        padding: 10rem 0px 10rem 5rem;
     }
 
     .phone-img, .tab-img{
@@ -439,6 +451,7 @@ padding: 2rem;
         text-align: start;
         width: 700px;
         font-size: 48px;
+        font-weight: 700 !important;
         
     }
 
@@ -456,9 +469,12 @@ padding: 2rem;
     }
 
 .header-img{
-  width: 450px;
+  width: 600px;
     }
 
+    .nav ul li a{
+        font-size: 1.2rem;
+      }
 
 
     .primary-btn{
@@ -466,8 +482,11 @@ padding: 2rem;
         width: 170px;
     }
 
+    
+
     .logo{
-        width: 180px;
+        width: 230px;
+        padding-right: 1rem;
     }
 
     .section{
@@ -491,24 +510,21 @@ padding: 2rem;
         font-weight: 500;
         }
 
+        .brand-sub-container{
+            gap: 2rem;
+        }
+
         .brand-logo{
             padding: 0 1.4rem 2rem 1.4rem;
         }
 
-        .nav ul li a{
-            font-size: 1.2rem;
-          }
-
-       .logo{
-            width: 200px;
-        }
 
  
 
        .article-content{
         flex-direction: row;
         justify-content: space-between;
-        padding: 2rem 4%;
+        padding: 2rem 6%;
        }
        
        .article-content .info{
