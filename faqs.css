@@ -42,7 +42,7 @@
     padding: 1rem 0px;
     font-size: 16px;
     cursor: pointer;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     position: relative;
 }
 
@@ -89,7 +89,7 @@
 @media screen and (min-width: 768px){
 
     .faq_container {
-        margin: 3rem;
+        margin: 1.5rem 3rem;
     }
 
     .faq_container .content-container .question {
