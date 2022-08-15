@@ -10,7 +10,7 @@
 
 .faq {
     background-color: #f3fbff;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,14 +22,15 @@
 }
 
 
-.faq_head {
-    width: 90%;
+.faq_container {
+    width: 100%;
     background-color: white;
     padding: 30px;
     border-radius: 30px;
+    margin: 1.2rem;
 }
 
-.faq_head .faq-title {
+.faq_container .faq-title {
     margin-bottom: 30px;
     text-align: center;
     color: #085cdc;
@@ -37,29 +38,28 @@
     font-weight: 700;
 }
 
-.faq_head .content-container .question {
-    padding: 10px 0px;
-    font-size: 18px;
+.faq_container .content-container .question {
+    padding: 1rem 0px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 10%;
+    /* border-radius: 10px; */
     position: relative;
 }
 
-.faq_head .content-container .question::after {
-    content: "+";
+.faq_container .content-container .question::after {
+    content: '+';
     position: absolute;
     right: -5px;
     color:var(--dark_text);
  font-weight: 600;
 }
 
-.faq_head .content-container .answer {
+.faq_container .content-container .answer {
     padding-top: 15px;
     font-size: 18px;
     line-height: 1.5;
     width: 100%;
-    height: 0px;
-    overflow: hidden;
+   display: none;
     color: var(--dark_text);
     transition: .5s;
     cursor: pointer;
@@ -67,19 +67,40 @@
 
 /* Javascript Styling Link */
 
-.faq_head .content-container.active .answer {
-    height: 150px;
+.faq_container .content-container.active .answer {
+    display: block;
 }
 
-.faq_head .content-container.active .question {
+.faq_container .content-container.active .question {
     font-size: 16px;
     transition: .5s;
 }
 
-.faq_head .content-container.active .question::after {
+.faq_container .content-container.active .question::after {
     content: "-";
     font-size: 25px;
     transition: .5s;
     color:var(--dark_text);
     font-weight: 600;
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    .faq_container {
+        margin: 3rem;
+    }
+
+    .faq_container .content-container .question {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 1240px){
+    .faq_container .content-container .question {
+        font-size: 20px;
+    }
+
 }
